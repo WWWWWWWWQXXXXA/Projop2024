@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+#przyciski {
+    padding: 15px;
+}
+button {
+    height: 70px;
+    width: 67px;
+    background-color: #696969;
+    margin: 20px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+#wyswietlacz {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #dcdcdc;
+    color: #000000;
+}
+#kalkulator {
+    font-family: serif;
+    background-color: #808080;
+    overflow: hidden;
+    max-width: 500px;
+}
+#specjalne {
+    background-color: #ffa500;
+}
+body {
+    margin: 0;
+    justify-content: center;
+    height: 900px;
+    align-items: center;
+    display: flex;
+    background: #000000;
+}
+button:hover{
+    background-color:hsl(0, 0%, 51%) ;
+}
+#specjalne:hover {
+    background-color: hsl(39, 100%, 65%);
+}
