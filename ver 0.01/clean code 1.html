@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean code1</title>
+</head>
+<body>
+    <script>
+    function userInfo(u) {
+        if (u.jestAktywny === true && u.wiek > 18) {
+            return u.imie + " jest aktywnym dorosłym";
+} 
+        else if (u.jestAktywny === true && u.wiek <= 18) {
+            return u.imie + " jest aktywnym niepełnoletnim";
+} 
+        else if (u.jestAktywny === false) {
+            return u.imie + " jest nie aktywny";
+}
+        else {
+            return "Nie ma informacji";
+}}
+
+
+
+    </script>
+    
+</body>
+</html>

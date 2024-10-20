@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function jestDorosly(wiek) {
+        return wiek > 18;
+}
+
+    function getUserStatus(jestAktywny) {
+        return jestAktywny ? "aktywny" : "nie aktywny";
+}
+
+    function describeUserStatus(user) { 
+        if (!user || typeof user.imie !== 'string') {
+        return "Nie ma informacji";
+}
+
+    const status = getUserStatus(user.jestAktywny);
+    const grupaWiekowa = jestDorosly(user.wiek) ? "dorosly" : "nie pelnoletni";
+
+    return `${user.imie} is an ${status} ${grupaWiekowa}`;
+}
+
+    </script>
+</body>
+</html>
